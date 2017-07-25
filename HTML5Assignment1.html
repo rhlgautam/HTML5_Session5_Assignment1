@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5Assignment5.1</title>
+	<style type="text/css">
+		button{
+			text-align: center;
+			padding: 5px;
+			margin-top: 10px;
+			background-color: orange;
+			display: inline-block;
+			color: white;
+		}
+	</style>
+	<script src="getArea.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>Welcome to Acadgild!!</h1>
+	<p>
+		<b>
+		This Demo will calculate area of circle of radius value provided by user. A seperate JS file with name 'getArea' has been created and referenced in the head section of HTML file.
+		</b>
+	</p>
+	<p>Only numbers value will be used in calculation. If user try to enter char/text, it will be give a message 'Please enter a correct value.'</p>
+	<p>
+		Calculated Area value is rounded off to the nearest integer.
+		<b>Result will be displayed on button click by setting innerHTML of paragraph tag element.</b>
+	</p>
+	<div>
+		<span>Enter Radius Value:</span><input type="text" id="getRad">
+	</div>
+	<button id="btn" onclick="btnClicked()" >Click to get area</button>
+	<p id="demo"></p>
+</body>
+</html>
